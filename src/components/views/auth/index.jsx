@@ -29,7 +29,7 @@ const Auth = () => {
             });
     }
 
-    const onSubmit = async (e) => {
+    const onSignup = async (e) => {
         e.preventDefault();
 
         await createUserWithEmailAndPassword(auth, email, password)
@@ -73,7 +73,7 @@ const Auth = () => {
                                 <input type="password" id="form2Example2" className="form-control"  value={password} onChange={(e) => setPassword(e.target.value)} />
                             </div>
                             {pageType === "signup" ?
-                                <button type="button" className="btn btn-primary btn-block mb-4"  onClick={onSubmit}>Sign up</button>
+                                <button type="button" className="btn btn-primary btn-block mb-4"  onClick={onSignup}>Sign up</button>
                                 :
                                 <button type="button" className="btn btn-primary btn-block mb-4"  onClick={onLogin}>Sign in</button>
                             }
