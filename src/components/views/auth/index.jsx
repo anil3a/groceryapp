@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
+
 const Auth = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -53,7 +54,7 @@ const Auth = () => {
 
 
             <div className="d-flex w-10 p-4 d-flex justify-content-center pb-4">
-                <form>
+                <form className="my-3 p-3">
                     {/* <div className="card"> */}
                     <div className="card border border-white">
 
@@ -93,6 +94,8 @@ const Auth = () => {
                                 <a href="#!" className="text-white"><i className="bi bi-instagram fa-lg mx-6 px-2"></i></a>
                                 <a href="#!" className="text-white"><i className="bi bi-whatsapp fa-lg"></i></a>
                             </div>
+
+                        
 
                             <div className="d-flex w-100 p-4 d-flex justify-content-center pb-4">
                                 {pageType === "signup" ?
