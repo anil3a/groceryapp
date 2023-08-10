@@ -51,16 +51,11 @@ const Auth = () => {
     return (
         // <div className="login-page">
         <div className="login-page">
-
-
-            <div className="d-flex w-10 p-4 d-flex justify-content-center pb-4">
-                <form className="my-3 p-3">
-                    {/* <div className="card"> */}
-                    <div className="card border border-white">
-
-                        <h3 className="d-flex w-100 p-4 d-flex justify-content-center text-center pb-4 text-white">Welcome to Jhigu Grocery</h3>
-                        <div className="text-center card-title ">
-
+            <h1 className="d-flex w-100 p-4 d-flex justify-content-center pb-4">Welcome to Jhigu Grocery</h1>
+            <div className="d-flex w-100 p-4 d-flex justify-content-center pb-4">
+                <form>
+                    <div className="card">
+                        <div className="text-center card-title">
                             {pageType === "signup" ?
                                 <h3>Sign Up</h3>
                                 :
@@ -87,30 +82,6 @@ const Auth = () => {
                                 // <button type="button" className="btn btn-primary btn-block mb-4"  onClick={onLogin}>Sign in</button>
                                 <button type="button" className="btn btn-outline-primary btn-block mb-4 text-white justify-content-center" onClick={onLogin}>Sign in</button>
                             }
-                            <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
-
-                            <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                                <a href="www.facebook.com" className="text-white"><i className="bi bi-facebook fa-lg"></i></a>
-                                <a href="#!" className="text-white"><i className="bi bi-instagram fa-lg mx-6 px-2"></i></a>
-                                <a href="#!" className="text-white"><i className="bi bi-whatsapp fa-lg"></i></a>
-                            </div>
-
-                        
-
-                            <div className="d-flex w-100 p-4 d-flex justify-content-center pb-4">
-                                {pageType === "signup" ?
-                                    <div className="text-center">
-                                        {/* <p>Already have an account? <button className="btn btn-primary" onClick={() => setPageType("login")}>Log in</button></p> */}
-                                        <p>Already have an account? <button className="btn btn-primary " onClick={() => setPageType("login")}>Log in</button></p>
-                                    </div>
-                                    :
-                                    <div className="text-center">
-                                        {/* <p>Don't have an account? <button className="btn btn-outline-primary text-white " onClick={() => setPageType("signup")}>Sign up</button></p> */}
-
-                                        <p>Don't have an account? <br /> <button className="btn btn-outline-primary text-white " onClick={() => setPageType("signup")}>Sign up</button></p>
-                                    </div>
-                                }
-                            </div>
                         </div>
 
                     </div>
